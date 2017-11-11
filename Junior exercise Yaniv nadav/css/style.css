@@ -1,0 +1,178 @@
+body{
+    background-color: #47ad87;
+}
+
+.container{
+    width: 100%;
+    margin-top: 20%;
+}
+
+#opening {
+    width: 50%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+#firstLine{
+    width: 60%;
+    color: white;
+    margin-top: 0%;
+    margin-left: 4%;
+}
+
+p{
+    margin-right: 1%;
+    margin-bottom: 10%;
+}
+
+#emailImage{
+    width: 58%;
+}
+
+.speech-bubble{
+    background-color: #dad5d5;
+    position: relative;
+    width: 80%;
+/*    height: 190px;*/
+    text-align: center;
+    /* background-color: #fff; */
+    /* border: 8px solid #666; */
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 5px;
+    margin-left: 10%;
+    margin-top: 35%;
+}
+
+
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 11px solid transparent;
+	border-bottom-color: #dad5d5;
+	border-top: 0;
+	margin-left: -11px;
+	margin-top: -11px;
+}
+
+form  {
+    margin-top: -30%;
+}
+
+input {
+    padding: 4%;
+    width: 80%;
+    border-radius: 7px;
+    border: none;
+}
+
+#userName{
+    background-image:url(user.png); 
+    background-repeat: no-repeat; 
+    background-size: 10%;
+    background-position: 95% 50%;
+    margin-bottom: 4%;
+    margin-top: 5%;
+}
+
+#password{
+    background-image:url(lock.png); 
+    background-repeat: no-repeat; 
+    background-size: 10%;
+    background-position: 95% 50%;
+    margin-bottom: 4%;
+}
+
+#submit{
+    background: #47ad87;
+    color: white;
+    width: 89%;
+    margin-bottom: 4%;
+    margin-left: 1%;
+
+
+}
+
+#lost{
+    color: #bdbdbd;
+    margin-bottom: 6%;
+}
+
+span{
+    width: 100%;
+}
+
+
+.loading{
+    display: none;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ccc;
+    border-top-color: #ff6a00;
+    border-radius: 100%;
+    position: fixed;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0;
+    margin: auto;
+    animation: round 2s linear infinite;
+}
+
+
+@keyframes round{
+    from{transform: rotate(0deg)}
+    to{transform: rotate(360deg)}
+}
+
+@media screen and (min-width: 960px){
+
+    .container{
+        width: 100%;
+        margin-top: 15%;
+    }
+    
+    #opening{
+        width: 10%;
+        margin-left: 30%;
+    }
+    
+    form{
+            margin-top: -33%;
+    }
+    .speech-bubble{
+        width: 33%;
+        margin-left: 40%;
+        margin-top: 0%;
+    }
+    
+    .speech-bubble:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 0;
+        height: 0;
+        border: 11px solid transparent;
+        border-right-color: #dad5d5;
+        border-left: 0;
+        margin-top: -85px;
+        margin-left: -11px;
+    }
+    
+    #emailImage{
+    height: 100px;
+    width: 100px;
+    }
+    
+    .loading {
+    display: none;
+    width: 50px;
+    height: 50px;
+    left: 13%;
+    }
+}
